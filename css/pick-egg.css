@@ -74,3 +74,66 @@ section {
 #hard-curve {
     background-image: url("../media/hard-curve.png");
 }
+
+#temperature-switcher {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#temperature-switcher input {
+    appearance: none;
+    background-color: #FFF4E3;
+    border: 1px solid gray;
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+#temperature-switcher label {
+    position: absolute;
+    background-color: #FFD699;
+    z-index: 1;
+    height: 40px;
+    width: 150px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    border-radius: 25px;
+}
+
+#temperature-switcher input::before,
+#temperature-switcher input::after {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#temperature-switcher input::before {
+    content: 'Room';
+    left: 70px;
+}
+
+#temperature-switcher input:checked::after {
+    font-weight: bolder;
+}
+
+#temperature-switcher input:not(:checked)::before {
+    font-weight: bolder;
+}
+
+#temperature-switcher input::after {
+    content: 'Fridge';
+    right: 70px;
+}
+
+#temperature-switcher input:checked+label {
+    left: 155px;
+    transition: left 0.5s;
+}
+
+#temperature-switcher input:not(:checked)+label {
+    left: 20px;
+    transition: left 0.5s;
+}

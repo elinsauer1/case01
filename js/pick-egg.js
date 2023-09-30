@@ -34,7 +34,6 @@ function pickYourEgg() {
         
         <h3>SIZE</h3>
         <section>
-            <h3></h3>
             <div class="radio-button-group">
                 <div class="input-container">
                     <input id="small" type="radio" name="radio-size">
@@ -57,6 +56,14 @@ function pickYourEgg() {
                     </div>
                     <label for="large">Large</label>
                 </div>
+            </div>
+        </section>
+
+        <h3>TEMPERATURE</h3>
+        <section>
+            <div id="temperature-switcher">
+                <input type="checkbox" name="switch">
+                <label for="switch"></label>
             </div>
         </section>
     `;
