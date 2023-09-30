@@ -1,5 +1,4 @@
 main {
-    height: 100%;
     margin: 3vh;
 }
 
@@ -84,10 +83,11 @@ section {
 #temperature-switcher input {
     appearance: none;
     background-color: #FFF4E3;
-    border: 1px solid gray;
-    width: 300px;
+    border: 1.5px solid gray;
+    width: 290px;
     height: 50px;
     border-radius: 25px;
+    cursor: pointer;
 }
 
 #temperature-switcher label {
@@ -99,7 +99,8 @@ section {
     top: 50%;
     transform: translateY(-50%);
     left: 20px;
-    border-radius: 25px;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 #temperature-switcher input::before,
@@ -129,11 +130,11 @@ section {
 }
 
 #temperature-switcher input:checked+label {
-    left: 165px;
+    left: 160px;
     transition: left 0.5s;
 }
 
 #temperature-switcher input:not(:checked)+label {
-    left: 20px;
+    left: 25px;
     transition: left 0.5s;
 }
