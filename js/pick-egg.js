@@ -67,4 +67,26 @@ function pickYourEgg() {
             </div>
         </section>
     `;
+
+    function applySelector(radioGroup) {
+        // Selects all the radio inputs for either consistency or size
+        const radioButtons = document.querySelectorAll(`input[name='${radioGroup}']`);
+
+        radioButtons.forEach(conButton => {
+            // When a radio button is checked, all not checked will have a different background color to know which has been selected
+            conButton.addEventListener("click", (e) => {
+                const notChecked = document.querySelectorAll(`.input-container input[name='${radioGroup}']:not(:checked)+.radio-button`);
+                notChecked.forEach(button => {
+                    button.style.backgroundColor = '#FFF4E3';
+                })
+
+                const isChecked = document.querySelector(`.input-container input[name='${radioGroup}']:checked+.radio-button`);
+                isChecked.style.backgroundColor = '#FFD699';
+            })
+        });
+    }
+
+    applySelector("radio-consistency")
+    applySelector("radio-size")
+
 } 

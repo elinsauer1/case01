@@ -30,7 +30,7 @@ section {
     height: 100%;
     margin: 0;
     z-index: 2;
-    opacity: 0.2;
+    opacity: 0;
     cursor: pointer;
 }
 
@@ -95,7 +95,7 @@ section {
     background-color: #FFD699;
     z-index: 1;
     height: 40px;
-    width: 150px;
+    width: 140px;
     top: 50%;
     transform: translateY(-50%);
     left: 20px;
@@ -115,6 +115,11 @@ section {
     left: 70px;
 }
 
+#temperature-switcher input::after {
+    content: 'Fridge';
+    right: 70px;
+}
+
 #temperature-switcher input:checked::after {
     font-weight: bolder;
 }
@@ -123,13 +128,8 @@ section {
     font-weight: bolder;
 }
 
-#temperature-switcher input::after {
-    content: 'Fridge';
-    right: 70px;
-}
-
 #temperature-switcher input:checked+label {
-    left: 155px;
+    left: 165px;
     transition: left 0.5s;
 }
 
