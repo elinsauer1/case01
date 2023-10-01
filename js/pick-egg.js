@@ -1,6 +1,6 @@
 "use strict";
 
-pickYourEgg()
+//pickYourEgg()
 function pickYourEgg() {
     main.innerHTML = `
         <h1>PICK YOUR EGG</h1>

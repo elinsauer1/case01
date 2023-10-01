@@ -1,0 +1,62 @@
+:root {
+    --button-color: rgba(243, 243, 243, 1);
+    --border-size: 30px;
+    --border: 0.5px solid rgba(188, 188, 188, 0.5);
+}
+
+.start-button {
+    border: var(--border);
+    text-align: center;
+    padding: 2vh 0 2vh 0;
+    border-radius: var(--border-size);
+    background-color: var(--button-color);
+    font-size: 20px;
+    margin-bottom: 2vh;
+}
+
+.color-container {
+    position: relative;
+    width: 88vw;
+    height: 3vh;
+    background-color: rgba(255, 201, 120, 0.75);
+    overflow: hidden;
+    border-radius: var(--border-size);
+    border: var(--border);
+}
+
+.color-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Börja från vänsterkanten */
+    width: 0;
+    /* Börja med noll bredd */
+    height: 100%;
+    background-color: rgba(255, 250, 243, 1);
+    border-radius: var(--border-size);
+}
+
+#footer-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.element {
+    margin-top: auto;
+    border-radius: var(--border-size);
+    border: var(--border);
+    height: 5vh;
+    width: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--button-color)
+}
+
+#egg {
+    /* Egg */
+
+}
