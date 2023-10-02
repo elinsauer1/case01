@@ -17,35 +17,56 @@ function EggTimerView() {
         </div>
     </div>
     <div id="footer-container">
-        <div class="element" class="instructions-button">INSTRUCTIONS</div>
-        <div class="element" class="new-egg-button">NEW EGG</div>
+        <div class="element" id="instructions-button">INSTRUCTIONS</div>
+        <div class="element" id="new-egg-button">NEW EGG</div>
     </div>
     `
 
-    const start_button = document.querySelector(".start-button");
-
-    //Skapar transition
-    start_button.addEventListener("click", () => {
-
-        document.querySelector(".start-button").textContent = "RESET";
-
-        const minutes = 0;
-        const seconds = 10;
-
-        countdown(minutes, seconds);
-
-        const total_time = (minutes * 60) + seconds + "s";
-        console.log(total_time);
-
-        const color_cover = document.querySelector(".color-cover");
-        color_cover.style.transition = 'width ' + total_time + ' linear';;
-        color_cover.style.width = '100%';
+    document.querySelector("#new-egg-button").addEventListener("click", () => {
+        pickYourEgg();
     });
 
+    document.querySelector("#instructions-button").addEventListener("click", () => {
+        console.log("hej instruction");
+        //Här lägger vi till instructionfunctionen
+    });
+
+    const start_button = document.querySelector(".start-button");
+
+    start_button.addEventListener("click", () => {
+
+        console.log("hej");
+
+        if (start_button.textContent === "START") {
+            start_button.textContent = "RESET";
+
+            const minutes = 0;
+            const seconds = 10;
+
+            //Skapar transition
+            const total_time = (minutes * 60) + seconds + "s";
+
+            const color_cover = document.querySelector(".color-cover");
+            color_cover.style.transition = 'width ' + total_time + ' linear';;
+            color_cover.style.width = '100%';
+
+            countdown(minutes, seconds);
+
+        } else {
+            console.log("reset");
+            EggTimerView();
+
+            //Hur stannar jag tiden, tiden fortsätter.
+        }
+
+
+
+    });
 }
 
-var timeoutHandle;
+//var timeoutHandle;
 function countdown(minutes, seconds) {
+
     function tick() {
 
         const counter = document.querySelector(".time");
@@ -62,7 +83,7 @@ function countdown(minutes, seconds) {
                 }, 1000);
             } else {
                 if (seconds === -1 && minutes === 0) {
-                    console.log("hej");
+                    EggTimerView();
                 }
             }
         }

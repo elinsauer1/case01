@@ -61,7 +61,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--button-color)
+    background-color: var(--button-color);
+    cursor: pointer;
 }
 
 #egg-container {
