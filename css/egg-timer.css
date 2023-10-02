@@ -4,6 +4,12 @@
     --border: 0.5px solid rgba(188, 188, 188, 0.5);
 }
 
+
+@font-face {
+    font-family: 'outfit';
+    src: url(/media/Fonts/Outfit/Outfit-VariableFont_wght.ttf);
+}
+
 .start-button {
     border: var(--border);
     text-align: center;
@@ -12,6 +18,8 @@
     background-color: var(--button-color);
     font-size: 20px;
     margin-bottom: 2vh;
+    margin-top: 10vh;
+    cursor: pointer;
 }
 
 .color-container {
@@ -49,14 +57,43 @@
     border-radius: var(--border-size);
     border: var(--border);
     height: 5vh;
-    width: 20vh;
+    width: 21vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--button-color)
 }
 
-#egg {
-    /* Egg */
+#egg-container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.egg {
+    width: 250px;
+    /* Bredd */
+    height: 320px;
+    /* Höjd (här kan du justera proportionerna för äggformen) */
+    background-color: rgba(255, 246, 232, 1);
+    border-radius: 50% / 60% 60% 40% 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    font-size: 50px;
+    font-family: 'outfit';
+}
+
+.time-container {
+    border-radius: 50%;
+    height: 19vh;
+    width: 19vh;
+    background-color: rgba(255, 201, 120, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
