@@ -112,12 +112,12 @@ section {
 
 #temperature-switcher input::before {
     content: 'Room';
-    left: 70px;
+    left: 65px;
 }
 
 #temperature-switcher input::after {
     content: 'Fridge';
-    right: 70px;
+    right: 60px;
 }
 
 #temperature-switcher input:checked::after {
