@@ -49,13 +49,15 @@ function EggTimerView() {
             color_cover.style.transition = 'width ' + total_time + ' linear';;
             color_cover.style.width = '100%';
 
-            countdown(minutes, seconds);
+            let timeoutHandle;
+
+            timeoutHandle = countdown(minutes, seconds);
 
         } else {
             console.log("reset");
             EggTimerView();
-
-            //Hur stannar jag tiden, tiden fortsätter.
+            clearTimeout(timeoutHandle);
+            document.querySelector(".time").textContent = "DONE";
         }
 
 
@@ -63,7 +65,8 @@ function EggTimerView() {
     });
 }
 
-//var timeoutHandle;
+
+
 function countdown(minutes, seconds) {
 
     function tick() {
@@ -88,6 +91,7 @@ function countdown(minutes, seconds) {
         }
     }
     tick();
+    return timeoutHandle;
 }
 
 
