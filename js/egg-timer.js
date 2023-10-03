@@ -1,8 +1,8 @@
 "use script";
 
-EggTimerView();
+// EggTimerView();
 
-function EggTimerView() {
+function EggTimerView(minutes, seconds) {
 
     main.innerHTML = `
     <div class="start-button">START</div>
