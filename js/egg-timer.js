@@ -46,13 +46,15 @@ function EggTimerView(minutes, seconds) {
             color_cover.style.transition = 'width ' + total_time + ' linear';;
             color_cover.style.width = '100%';
 
-            countdown(minutes, seconds);
+            let timeoutHandle;
+
+            timeoutHandle = countdown(minutes, seconds);
 
         } else {
             console.log("reset");
             EggTimerView();
-
-            //Hur stannar jag tiden, tiden fortsätter.
+            clearTimeout(timeoutHandle);
+            document.querySelector(".time").textContent = "0:00";
         }
 
 
@@ -60,7 +62,6 @@ function EggTimerView(minutes, seconds) {
     });
 }
 
-//var timeoutHandle;
 function countdown(minutes, seconds) {
 
     function tick() {
@@ -80,11 +81,13 @@ function countdown(minutes, seconds) {
             } else {
                 if (seconds === -1 && minutes === 0) {
                     EggTimerView();
+                    document.querySelector(".time").textContent = "DONE";
                 }
             }
         }
     }
     tick();
+    return timeoutHandle;
 }
 
 
