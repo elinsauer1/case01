@@ -7,7 +7,7 @@
 /*Fick inte nedan font-face att fungera*/
 @font-face {
     font-family: 'outfit';
-    src: url(/media/Fonts/Outfit/Outfit-VariableFont_wght.ttf);
+    src: url("/media/Fonts/Outfit/Outfit-VariableFont_wght.ttf");
 }
 
 .start-button {

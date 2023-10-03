@@ -65,8 +65,6 @@ function EggTimerView() {
     });
 }
 
-
-
 function countdown(minutes, seconds) {
 
     function tick() {
