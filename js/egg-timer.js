@@ -39,9 +39,6 @@ function EggTimerView(minutes, seconds) {
         if (start_button.textContent === "START") {
             start_button.textContent = "RESET";
 
-            const minutes = 0;
-            const seconds = 10;
-
             //Skapar transition
             const total_time = (minutes * 60) + seconds + "s";
 
