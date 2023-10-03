@@ -5,8 +5,8 @@ function pickYourEgg() {
     main.innerHTML = `
         <h1>PICK YOUR EGG</h1>
 
-        <h3>CONSISTENCY</h3>
         <section>
+            <h3>CONSISTENCY</h3>
             <div class="radio-button-group">
                 <div class="input-container">
                     <input id="liquid" type="radio" name="radio-consistency">
@@ -32,8 +32,8 @@ function pickYourEgg() {
             </div>
         </section>
         
-        <h3>SIZE</h3>
         <section>
+            <h3>SIZE</h3>
             <div class="radio-button-group">
                 <div class="input-container">
                     <input id="small" type="radio" name="radio-size">
@@ -59,8 +59,8 @@ function pickYourEgg() {
             </div>
         </section>
 
-        <h3>TEMPERATURE</h3>
         <section>
+            <h3>TEMPERATURE</h3>
             <div id="temperature-switcher">
                 <input type="checkbox" name="switch">
                 <label for="switch"></label>

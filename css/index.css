@@ -1,9 +1,30 @@
 body {
-    margin: 0;
+    /* margin: 0; */
     background-color: #FAFAFA;
 }
 
 * {
     box-sizing: border-box;
     font-family: 'outfit';
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header div {
+    background-color: #FFD699;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header ion-icon {
+    font-size: 40px;
+    color: #FAFAFA;
 }
