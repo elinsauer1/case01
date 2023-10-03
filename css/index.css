@@ -1,3 +1,15 @@
+:root {
+    --button-color: rgba(243, 243, 243, 1);
+    --border-radius-size: 30px;
+    --border: 0.5px solid rgba(188, 188, 188, 0.5);
+}
+
+/*Fick inte nedan font-face att fungera*/
+@font-face {
+    font-family: 'outfit';
+    src: url("/media/Fonts/Outfit/Outfit-VariableFont_wght.ttf");
+}
+
 body {
     margin: 0;
     background-color: #FAFAFA;

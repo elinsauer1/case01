@@ -1,20 +1,8 @@
-:root {
-    --button-color: rgba(243, 243, 243, 1);
-    --border-size: 30px;
-    --border: 0.5px solid rgba(188, 188, 188, 0.5);
-}
-
-/*Fick inte nedan font-face att fungera*/
-@font-face {
-    font-family: 'outfit';
-    src: url("/media/Fonts/Outfit/Outfit-VariableFont_wght.ttf");
-}
-
 .start-button {
     border: var(--border);
     text-align: center;
     padding: 2vh 0 2vh 0;
-    border-radius: var(--border-size);
+    border-radius: var(--border-radius-size);
     background-color: var(--button-color);
     font-size: 20px;
     margin-bottom: 2vh;
@@ -28,7 +16,7 @@
     height: 3vh;
     background-color: rgba(255, 201, 120, 0.75);
     overflow: hidden;
-    border-radius: var(--border-size);
+    border-radius: var(--border-radius-size);
     border: var(--border);
 }
 
@@ -41,7 +29,7 @@
     /* Börja med noll bredd */
     height: 100%;
     background-color: rgba(255, 250, 243, 1);
-    border-radius: var(--border-size);
+    border-radius: var(--border-radius-size);
 }
 
 #footer-container {
@@ -54,7 +42,7 @@
 
 .element {
     margin-top: auto;
-    border-radius: var(--border-size);
+    border-radius: var(--border-radius-size);
     border: var(--border);
     height: 5vh;
     width: 21vh;
@@ -85,7 +73,7 @@
 }
 
 .time {
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'outfit';
 }
 

@@ -57,7 +57,7 @@ function EggTimerView() {
             console.log("reset");
             EggTimerView();
             clearTimeout(timeoutHandle);
-            document.querySelector(".time").textContent = "DONE";
+            document.querySelector(".time").textContent = "0:00";
         }
 
 
@@ -84,6 +84,7 @@ function countdown(minutes, seconds) {
             } else {
                 if (seconds === -1 && minutes === 0) {
                     EggTimerView();
+                    document.querySelector(".time").textContent = "DONE";
                 }
             }
         }
