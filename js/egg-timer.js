@@ -27,8 +27,7 @@ function EggTimerView(minutes, seconds) {
     });
 
     document.querySelector("#instructions-button").addEventListener("click", () => {
-        console.log("hej instruction");
-        //Här lägger vi till instructionfunctionen
+        popUp();
     });
 
     const start_button = document.querySelector(".start-button");
