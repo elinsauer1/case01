@@ -130,6 +130,6 @@ const eggTimes = [
         consistency: "hard",
         temp: "fridge",
         minutes: 11,
-        seconds: 3
+        seconds: 0o3
     }
 ];

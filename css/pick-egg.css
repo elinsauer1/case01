@@ -137,3 +137,8 @@ section {
     left: 11px;
     transition: left 0.5s;
 }
+
+footer {
+    display: flex;
+    justify-content: end;
+}

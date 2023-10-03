@@ -66,7 +66,10 @@ function pickYourEgg() {
                 <label for="switch"></label>
             </div>
         </section>
-        <button id="continue">Continue</button>
+        <footer>
+            <div id="continue" class="element">Continue</div>
+        </footer>
+        
     `;
 
     function applySelector(radioGroup) {
