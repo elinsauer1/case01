@@ -15,6 +15,7 @@
 #popup {
     background-color: #fff;
     padding: 20px;
+    margin: 0 3vh 0 3vh;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     text-align: center;
@@ -24,18 +25,35 @@
     display: none;
 }
 
-#close-popup {
-    cursor: pointer;
-    color: #0077cc;
-    display: flex;
-    justify-content: end;
-}
-
 #popup-footer {
     display: flex;
     justify-content: space-between;
+    padding-top: 3vh;
 }
 
 #arrow {
     cursor: pointer;
+}
+
+#dots {
+    display: flex;
+    gap: 3px;
+    padding-left: 34vw;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+    background-color: rgba(255, 244, 227, 1);
+    border: var(--border);
+}
+
+#dot1 {
+    background-color: rgba(255, 201, 120, 1);
+}
+
+#step {
+    font-weight: bold;
 }

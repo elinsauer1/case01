@@ -1,3 +1,15 @@
+:root {
+    --button-color: rgba(243, 243, 243, 1);
+    --border-radius-size: 30px;
+    --border: 0.5px solid rgba(188, 188, 188, 0.5);
+}
+
+/*Fick inte nedan font-face att fungera*/
+@font-face {
+    font-family: 'outfit';
+    src: url("/media/Fonts/Outfit/Outfit-VariableFont_wght.ttf");
+}
+
 body {
     /* margin: 0; */
     background-color: #FAFAFA;
@@ -6,25 +18,4 @@ body {
 * {
     box-sizing: border-box;
     font-family: 'outfit';
-}
-
-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-header div {
-    background-color: #FFD699;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-header ion-icon {
-    font-size: 40px;
-    color: #FAFAFA;
 }
