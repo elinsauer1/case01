@@ -90,7 +90,7 @@ function pickYourEgg() {
                 const isChecked = document.querySelector(`.input-container input[name='${radioGroup}']:checked+.radio-button`);
 
                 isChecked.style.backgroundColor = '#FFD699';
-                isChecked.style.border = '1.5px solid black';
+                isChecked.style.border = '1.5px solid #686868';
                 isChecked.querySelector("div").style.opacity = "100%";
             })
         });

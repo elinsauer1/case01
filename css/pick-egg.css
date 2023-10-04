@@ -49,7 +49,7 @@ section h3 {
     height: 100%;
     background-color: #FFD699;
     border-radius: 50%;
-    border: 1.5px solid black;
+    border: 1.5px solid #686868;
 }
 
 .input-container input:not(:checked)+.radio-button {
@@ -76,15 +76,15 @@ section h3 {
 }
 
 #liquid-curve {
-    background-image: url("../media/liquid-curve.png");
+    background-image: url("../media/liquid-curve2.png");
 }
 
 #soft-curve {
-    background-image: url("../media/soft-curve.png");
+    background-image: url("../media/soft-curve2.png");
 }
 
 #hard-curve {
-    background-image: url("../media/hard-curve.png");
+    background-image: url("../media/hard-curve2.png");
 }
 
 #temperature-switcher {
@@ -97,7 +97,7 @@ section h3 {
 #temperature-switcher input {
     appearance: none;
     background-color: #FFF4E3;
-    border: 0.5px solid rgba(117, 117, 117, 0.5);
+    border: 1px solid rgba(117, 117, 117, 0.5);
     width: 260px;
     height: 45px;
     border-radius: 25px;
