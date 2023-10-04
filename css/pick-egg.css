@@ -6,7 +6,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 3vh;
+    margin-bottom: 5vh;
 }
 
 .radio-button-group {
@@ -17,8 +17,8 @@ section {
 
 .input-container {
     position: relative;
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     margin: 1.5vh;
 }
 
@@ -31,10 +31,6 @@ section {
     opacity: 0;
     cursor: pointer;
 }
-
-/* .input-container input:not(:checked)+.radio-button {
-    background-color: #FFF4E3;
-} */
 
 .input-container .radio-button {
     display: flex;
@@ -83,8 +79,8 @@ section {
     appearance: none;
     background-color: #FFF4E3;
     border: 1.5px solid gray;
-    width: 290px;
-    height: 50px;
+    width: 260px;
+    height: 45px;
     border-radius: 25px;
     cursor: pointer;
 }
@@ -93,8 +89,8 @@ section {
     position: absolute;
     background-color: #FFD699;
     z-index: 1;
-    height: 40px;
-    width: 140px;
+    height: 35px;
+    width: 130px;
     top: 50%;
     transform: translateY(-50%);
     left: 20px;
@@ -112,12 +108,12 @@ section {
 
 #temperature-switcher input::before {
     content: 'Room';
-    left: 65px;
+    left: 55px;
 }
 
 #temperature-switcher input::after {
     content: 'Fridge';
-    right: 60px;
+    right: 50px;
 }
 
 #temperature-switcher input:checked::after {
@@ -129,7 +125,7 @@ section {
 }
 
 #temperature-switcher input:checked+label {
-    left: 147px;
+    left: 128px;
     transition: left 0.5s;
 }
 
