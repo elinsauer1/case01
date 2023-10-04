@@ -67,7 +67,9 @@ function pickYourEgg() {
             </div>
         </section>
         <footer>
-            <div id="continue" class="element"><ion-icon name="chevron-forward-outline"></ion-icon></div>
+            <div id="continue" class="element">
+                <ion-icon name="time-outline"></ion-icon>
+            </div>
         </footer>
         
     `;
@@ -149,4 +151,4 @@ function pickYourEgg() {
             console.log("Please select consistency and size.");
         }
     })
-} 
+}
