@@ -16,7 +16,7 @@ function pickYourEgg() {
                     <label for="liquid">Liquid</label>
                 </div>
                 <div class="input-container">
-                    <input id="soft" type="radio" name="radio-consistency">
+                    <input id="soft" type="radio" name="radio-consistency" checked="checked">
                     <div class="radio-button" data-consistency="soft">
                         <div id="soft-curve" class="curve-png"></div>
                     </div>
@@ -43,7 +43,7 @@ function pickYourEgg() {
                     <label for="small">Small</label>
                 </div>
                 <div class="input-container">
-                    <input id="medium" type="radio" name="radio-size">
+                    <input id="medium" type="radio" name="radio-size" checked="checked">
                     <div class="radio-button" data-size="medium">
                         <div>M</div>
                     </div>
@@ -83,7 +83,7 @@ function pickYourEgg() {
                 notChecked.forEach(button => {
                     button.style.backgroundColor = '#FFF4E3';
                     button.style.border = '1.5px solid rgb(155, 155, 155)';
-                    button.querySelector("div").style.opacity = "40%";
+                    button.querySelector("div").style.opacity = "60%";
                 })
 
                 const isChecked = document.querySelector(`.input-container input[name='${radioGroup}']:checked+.radio-button`);
@@ -104,8 +104,8 @@ function pickYourEgg() {
     const sizeRadios = document.querySelectorAll("input[name='radio-size']");
 
     // Initialize selected values
-    let selectedConsistency = "";
-    let selectedSize = "";
+    let selectedConsistency = "soft";
+    let selectedSize = "medium";
     let isTemperatureChecked = false;
 
     // Add event listeners to consistency and size radios
