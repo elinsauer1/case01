@@ -21,6 +21,16 @@
     text-align: center;
 }
 
+#popup-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#close-popup {
+    cursor: pointer;
+    font-size: 5vw;
+}
+
 .hidden {
     display: none;
 }

@@ -10,14 +10,24 @@
     src: url("/media/Fonts/Outfit/Outfit-VariableFont_wght.ttf");
 }
 
+@font-face {
+    font-family: 'inter';
+    src: url("/media/Fonts/Outfit/Outfit-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: 'oxygen';
+    src: url("/media/Fonts/Outfit/Outfit-VariableFont_wght.ttf");
+}
+
 body {
-    margin: 1vh 6vw 1vh 6vw;
+    margin: 2vh 5vw 2vh 5vw;
     background-color: #FAFAFA;
 }
 
 * {
     box-sizing: border-box;
-    font-family: 'outfit';
+    font-family: 'inter';
 }
 
 header {
@@ -39,4 +49,9 @@ header div {
 header ion-icon {
     color: #FAFAFA;
     font-size: 40px;
+}
+
+header h3 {
+    font-size: 17px;
+    font-family: "oxygen";
 }

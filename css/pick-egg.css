@@ -1,5 +1,9 @@
 h1 {
     text-align: center;
+    font-family: "inter";
+    font-size: 26px;
+    margin-top: 6vh;
+    margin-bottom: 5vh;
 }
 
 section {
@@ -7,6 +11,12 @@ section {
     flex-direction: column;
     align-items: center;
     margin-bottom: 5vh;
+}
+
+section h3 {
+    font-family: "inter";
+    font-size: 13px;
+    margin-bottom: 1vh;
 }
 
 .radio-button-group {
@@ -39,7 +49,7 @@ section {
     height: 100%;
     background-color: #FFD699;
     border-radius: 50%;
-    border: 1.5px solid black;
+    border: 0.5px solid rgba(117, 117, 117, 0.5);
 }
 
 .input-container input:not(:checked)+.radio-button {
@@ -53,6 +63,8 @@ section {
     width: 100%;
     text-align: center;
     margin-top: 1vh;
+    font-family: "inter";
+    font-size: 14px;
 }
 
 .curve-png {
@@ -79,12 +91,13 @@ section {
     position: relative;
     display: flex;
     justify-content: center;
+    margin: 1.5vh;
 }
 
 #temperature-switcher input {
     appearance: none;
     background-color: #FFF4E3;
-    border: 1.5px solid gray;
+    border: 0.5px solid rgba(117, 117, 117, 0.5);
     width: 260px;
     height: 45px;
     border-radius: 25px;
@@ -102,6 +115,7 @@ section {
     left: 20px;
     border-radius: 20px;
     cursor: pointer;
+    border: 1.5px solid black;
 }
 
 #temperature-switcher input::before,

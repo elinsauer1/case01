@@ -7,7 +7,12 @@ function popUp(min, sec) {
     main.innerHTML += `
     <div id="popup-container" class="hidden">
         <div id="popup">
-            <p id="step">STEP 1</p>
+            <div id="popup-header">
+                <p id="step">STEP 1</p>
+                <div id="close-popup">
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+            </div>
             <p id="step-text">Fill a saucepan with water and bring to a boil</p>
             <div id="popup-footer">
                 <div id="dots">
@@ -24,8 +29,8 @@ function popUp(min, sec) {
     `
     const instructionsButton = document.getElementById("instructions-button");
     const popupContainer = document.getElementById("popup-container");
-    const closePopupButton = document.getElementById("close-popup");
     const arrowButton = document.getElementById("arrow");
+    const closePopUp = document.getElementById("close-popup");
 
     instructionsButton.addEventListener("click", () => {
         popupContainer.classList.remove("hidden");
@@ -35,6 +40,10 @@ function popUp(min, sec) {
         if (event.target === popupContainer) {
             popupContainer.classList.add("hidden");
         }
+    });
+
+    closePopUp.addEventListener("click", () => {
+        EggTimerView();
     });
 
     arrowButton.addEventListener("click", () => {
