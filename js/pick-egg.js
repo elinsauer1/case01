@@ -68,7 +68,7 @@ function pickYourEgg() {
         </section>
         <footer>
             <div id="continue" class="element">
-                <ion-icon name="time-outline"></ion-icon>
+            <ion-icon name="time-outline"></ion-icon>
             </div>
         </footer>
         
