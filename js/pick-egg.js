@@ -67,11 +67,7 @@ function pickYourEgg() {
             </div>
         </section>
         <footer>
-<<<<<<< HEAD
             <div id="continue" class="element"><ion-icon name="chevron-forward-outline"></ion-icon></div>
-=======
-            <div id="continue" class="element"> GO TO TIMER</div>
->>>>>>> PickEgg
         </footer>
         
     `;
