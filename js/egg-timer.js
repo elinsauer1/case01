@@ -17,8 +17,8 @@ function EggTimerView(minutes, seconds) {
             </div>
         </div>
         <div id="footer-container">
-            <div class="element" id="instructions-button">INSTRUCTIONS</div>
-            <div class="element" id="new-egg-button">NEW EGG</div>
+        <div class="element" id="new-egg-button"><ion-icon name="chevron-back-outline"></div>
+            <div class="element" id="instructions-button"><ion-icon name="information-circle-outline"></ion-icon></ion-icon></div>
         </div>
     `;
 

@@ -56,12 +56,11 @@
     border-radius: var(--border-radius-size);
     /*border: var(--border);*/
     height: 5vh;
-    width: 21vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--button-color);
     cursor: pointer;
+    font-size: 7vw;
 }
 
 #egg-container {
@@ -97,4 +96,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 8vh;
 }
