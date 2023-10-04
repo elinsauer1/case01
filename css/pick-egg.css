@@ -1,5 +1,10 @@
 h1 {
     text-align: center;
+    font-family: "oxygen";
+}
+
+h3 {
+    font-family: "inter";
 }
 
 section {
@@ -51,6 +56,7 @@ section {
     width: 100%;
     text-align: center;
     margin-top: 1vh;
+    font-family: "inter";
 }
 
 .curve-png {

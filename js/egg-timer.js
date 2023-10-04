@@ -1,6 +1,6 @@
 "use script";
 
-EggTimerView();
+//EggTimerView();
 
 function EggTimerView(minutes, seconds) {
 
