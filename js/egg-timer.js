@@ -1,7 +1,5 @@
 "use script";
 
-//EggTimerView();
-
 function EggTimerView(minutes, seconds) {
 
     main.innerHTML = `
@@ -15,6 +13,7 @@ function EggTimerView(minutes, seconds) {
                     <p class="time">${minutes}:${seconds}</p>
                 </div>
             </div>
+            <div id="egg-shadow"></div>
         </div>
         <div id="footer-container">
         <div class="element" id="new-egg-button"><ion-icon name="chevron-back-outline"></div>
