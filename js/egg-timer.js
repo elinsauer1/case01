@@ -5,22 +5,26 @@
 function EggTimerView(minutes, seconds) {
 
     main.innerHTML = `
-    <div class="start-button">START</div>
-    <div class="color-container">
-        <div class="color-cover"></div>
-    </div>
-    <div id="egg-container">
-        <div class="egg">
-            <div class="time-container">
-                <p class="time">0:00</p>
+        <div class="start-button">START</div>
+        <div class="color-container">
+            <div class="color-cover"></div>
+        </div>
+        <div id="egg-container">
+            <div class="egg">
+                <div class="time-container">
+                    <p class="time">${minutes}:${seconds}</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="footer-container">
-        <div class="element" id="instructions-button">INSTRUCTIONS</div>
-        <div class="element" id="new-egg-button">NEW EGG</div>
-    </div>
-    `
+        <div id="footer-container">
+            <div class="element" id="instructions-button">INSTRUCTIONS</div>
+            <div class="element" id="new-egg-button">NEW EGG</div>
+        </div>
+    `;
+
+    let min = minutes || 0;
+    let sec = seconds || 0;
+
 
     document.querySelector("#new-egg-button").addEventListener("click", () => {
         pickYourEgg();
@@ -34,13 +38,11 @@ function EggTimerView(minutes, seconds) {
 
     start_button.addEventListener("click", () => {
 
-        console.log("hej");
-
         if (start_button.textContent === "START") {
             start_button.textContent = "RESET";
 
             //Skapar transition
-            const total_time = (minutes * 60) + seconds + "s";
+            const total_time = (min * 60) + sec + "s";
 
             const color_cover = document.querySelector(".color-cover");
             color_cover.style.transition = 'width ' + total_time + ' linear';;
@@ -48,13 +50,12 @@ function EggTimerView(minutes, seconds) {
 
             let timeoutHandle;
 
-            timeoutHandle = countdown(minutes, seconds);
+            timeoutHandle = countdown(min, sec);
 
         } else {
             console.log("reset");
-            EggTimerView();
+            EggTimerView(min, sec);
             clearTimeout(timeoutHandle);
-            document.querySelector(".time").textContent = "0:00";
         }
 
 
