@@ -15,6 +15,7 @@ function EggTimerView(minutes, seconds) {
                     <p class="time">${minutes}:${seconds}</p>
                 </div>
             </div>
+            <div id="shadow"></div>
         </div>
         <div id="footer-container">
         <div class="element" id="new-egg-button"><ion-icon name="chevron-back-outline"></div>
