@@ -6,10 +6,6 @@ h1 {
     margin-bottom: 4vh;
 }
 
-footer {
-    padding-bottom: 5vh;
-}
-
 section {
     display: flex;
     flex-direction: column;
@@ -123,7 +119,6 @@ section h3 {
     left: 20px;
     border-radius: 20px;
     cursor: pointer;
-    border: 1.5px solid black;
 }
 
 #temperature-switcher input::before,
