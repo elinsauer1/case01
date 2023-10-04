@@ -1,6 +1,6 @@
 "use script";
 
-function popUp() {
+function popUp(min, sec) {
 
     //ska fixa class och id.n här, de lite kaos blandat.
 
@@ -54,7 +54,7 @@ function popUp() {
             document.getElementById("dot3").style.backgroundColor = "rgba(255, 201, 120, 1)";
 
             arrowButton.addEventListener("click", () => {
-                EggTimerView();
+                EggTimerView(min, sec);
             })
         })
 

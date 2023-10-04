@@ -138,3 +138,7 @@ footer {
     display: flex;
     justify-content: end;
 }
+
+#continue {
+    margin-top: 5vh;
+}

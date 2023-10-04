@@ -31,7 +31,7 @@ function EggTimerView(minutes, seconds) {
     });
 
     document.querySelector("#instructions-button").addEventListener("click", () => {
-        popUp();
+        popUp(min, sec);
     });
 
     const start_button = document.querySelector(".start-button");
@@ -57,9 +57,6 @@ function EggTimerView(minutes, seconds) {
             EggTimerView(min, sec);
             clearTimeout(timeoutHandle);
         }
-
-
-
     });
 }
 
@@ -73,7 +70,6 @@ function countdown(minutes, seconds) {
         seconds--;
         if (seconds >= 0) {
             timeoutHandle = setTimeout(tick, 1000);
-
         } else {
             if (minutes >= 1) {
                 setTimeout(function () {
@@ -81,7 +77,6 @@ function countdown(minutes, seconds) {
                 }, 1000);
             } else {
                 if (seconds === -1 && minutes === 0) {
-                    EggTimerView();
                     document.querySelector(".time").textContent = "DONE";
                 }
             }
