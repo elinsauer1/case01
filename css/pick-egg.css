@@ -1,12 +1,17 @@
 h1 {
     text-align: center;
+    margin-top: 6vh;
 }
 
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 5vh;
+    margin-bottom: 7vh;
+}
+
+section h3 {
+    margin-bottom: 5px;
 }
 
 .radio-button-group {
@@ -146,5 +151,5 @@ footer {
 }
 
 #continue {
-    margin-top: 5vh;
+    margin-top: 5px;
 }

@@ -67,7 +67,7 @@ function pickYourEgg() {
             </div>
         </section>
         <footer>
-            <div id="continue" class="element">Continue</div>
+            <div id="continue" class="element"> GO TO TIMER</div>
         </footer>
         
     `;
