@@ -85,7 +85,6 @@ function pickYourEgg() {
                 notChecked.forEach(button => {
                     button.style.backgroundColor = '#FFF4E3';
                     button.style.border = '1.5px solid rgb(155, 155, 155)';
-                    button.querySelector("div").style.opacity = "60%";
                 })
 
                 const isChecked = document.querySelector(`.input-container input[name='${radioGroup}']:checked+.radio-button`);
