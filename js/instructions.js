@@ -43,7 +43,7 @@ function popUp(min, sec) {
     });
 
     closePopUp.addEventListener("click", () => {
-        EggTimerView();
+        EggTimerView(min, sec);
     });
 
     arrowButton.addEventListener("click", () => {
@@ -62,9 +62,7 @@ function popUp(min, sec) {
             document.getElementById("dot2").style.backgroundColor = "rgba(255, 244, 227, 1)";
             document.getElementById("dot3").style.backgroundColor = "rgba(255, 201, 120, 1)";
 
-            arrowButton.addEventListener("click", () => {
-                EggTimerView(min, sec);
-            })
+            arrowButton.style.opacity = 0;
         })
 
     })
