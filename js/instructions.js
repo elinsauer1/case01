@@ -3,9 +3,10 @@
 function popUp(min, sec) {
 
     //ska fixa class och id.n här, de lite kaos blandat.
-
-    main.innerHTML += `
-    <div id="popup-container" class="hidden">
+    const popupContainer = document.createElement("div");
+    popupContainer.setAttribute("id", "popup-container");
+    popupContainer.classList.add("hidden");
+    popupContainer.innerHTML = `
         <div id="popup">
             <div id="popup-header">
                 <p id="step">STEP 1</p>
@@ -25,10 +26,12 @@ function popUp(min, sec) {
                 </div>
             </div>
         </div>
-    </div>
-    `
+    `;
+
+
+    main.append(popupContainer);
+
     const instructionsButton = document.getElementById("instructions-button");
-    const popupContainer = document.getElementById("popup-container");
     const arrowButton = document.getElementById("arrow");
     const closePopUp = document.getElementById("close-popup");
 
@@ -43,7 +46,7 @@ function popUp(min, sec) {
     });
 
     closePopUp.addEventListener("click", () => {
-        EggTimerView(min, sec);
+        popupContainer.remove()
     });
 
     arrowButton.addEventListener("click", () => {
