@@ -81,6 +81,11 @@ function countdown(minutes, seconds) {
             } else {
                 if (seconds === -1 && minutes === 0) {
                     document.querySelector(".time").textContent = "DONE";
+                    alarm.play();
+
+                    setTimeout(() => {
+                        alarm.pause();
+                    }, 2500)
                 }
             }
         }

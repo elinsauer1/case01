@@ -13,6 +13,10 @@ section {
     margin-bottom: 7vh;
 }
 
+section:last-of-type {
+    margin-bottom: 6vh;
+}
+
 section h3 {
     font-family: "inter";
     font-size: 13px;
@@ -159,5 +163,14 @@ footer {
 }
 
 #continue {
-    margin-top: 1vh;
+    text-align: center;
+    padding: 1.5vh 4vh;
+    border-radius: var(--border-radius-size);
+    background-color: var(--button-color);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#continue:hover {
+    background-color: rgb(213, 213, 213);
 }

@@ -4,6 +4,7 @@
 const header = document.querySelector("header");
 const main = document.querySelector("main");
 const footer = document.querySelector("footer");
+const alarm = new Audio("../mixkit-digital-clock-digital-alarm-buzzer-992.wav");
 
 const eggTimes = [
     {
@@ -66,8 +67,10 @@ const eggTimes = [
         size: "medium",
         consistency: "soft",
         temp: "room",
-        minutes: 6,
-        seconds: 14
+        // minutes: 6,
+        // seconds: 14,
+        minutes: 0,
+        seconds: 10
     },
     {
         size: "medium",

@@ -14,7 +14,9 @@ function popUp(min, sec) {
                     <ion-icon name="close-outline"></ion-icon>
                 </div>
             </div>
-            <p id="step-text">Fill a saucepan with water and bring to a boil</p>
+            <p id="step-text">Fill a saucepan with water and bring to a boil
+            <br><span>filler</span>
+            </p>
             <div id="popup-footer">
                 <div id="dots">
                     <div id="dot1" class="dot"></div>
